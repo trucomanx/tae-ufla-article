@@ -1,31 +1,17 @@
-# separator-rule package
+# Latex class to TAE journal
 
 
-Creates macros to show separator rules
+Creates macros in the TAE journal format.
 
-![Screenshot](https://sourceforge.net/p/latex-macros-packages/separator-rule/ci/main/tree/screenshot.png)
+![Screenshot](screenshot.png)
 
-## Install package
-Put the separator-rule.sty file in any of these locations
 
-* Put the `separator-rule.sty` file in the same path of main tex file.
-* Execute the commmand:
 
-	kpsewhich -var-value=TEXMFHOME
+## Load the class
+Put the `tae-ufla-article.cls` file in some location, by example `/path/of/file`.
+To load the class use the next command in the preamble of main tex document.
 
-    and this returns the path of local tex files. By example, if returns 
-
-	/home/username/texmf
-
-    then, put the `separator-rule.sty` file in the directory.
-
-	/home/username/texmf/tex/latex/separator-rule/separator-rule.sty
-
-## Load the package
-
-To load the package use the next command in the preamble of main tex document.
-
-	\usepackage{separator-rule}
+	\documentclass{/path/of/file/tae-ufla-article}
 
 
 
