@@ -14,4 +14,6 @@ To load the class use the next command in the preamble of main tex document.
 	\documentclass{/path/of/file/tae-ufla-article}
 
 
-
+## Example
+An example of using the class can be found at 
+`https://github.com/trucomanx/tae-ufla-article/tree/main/example`
