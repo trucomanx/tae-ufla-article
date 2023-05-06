@@ -29,6 +29,8 @@
 
 
 \RequirePackage[left=20mm,right=20mm,top=20mm,bottom=25mm]{geometry}
+\setlength{\columnsep}{4.23mm}
+
 \RequirePackage{titlesec}
 
 \RequirePackage[T1]{fontenc}
