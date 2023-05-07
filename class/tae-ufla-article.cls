@@ -18,12 +18,9 @@
 \RequirePackage{comment}
 \RequirePackage{setspace}
 \RequirePackage{leading}
+
+
 \RequirePackage{anyfontsize}
-
-
-
-%%\RequirePackage{graphicx} %% needed for \resizebox
-
 
 
 
@@ -203,3 +200,7 @@ justification=raggedright}
 \fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
 \fancyfoot[RE,LO]{\fontsize{6}{10}\selectfont\taefoottext} % other info in "inner" position of footer line
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Book antiqua en word is Palatino en latex
+
+\RequirePackage{mathpazo}
