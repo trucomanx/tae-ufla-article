@@ -74,16 +74,19 @@
 %% Figure Caption format
 
 \RequirePackage{caption}
+% justify captions
+
 \captionsetup{
-%format=plain,
+format=plain,
 %indention=0.5cm,
 %margin=10pt, %left margin of caption figure %{left amout,right amount}
 %font=small,
 skip=2mm,%The vertical space between the caption and float (figure o table)
 labelfont=bf,
 singlelinecheck=false,
-justification=raggedright}
+justification=justified}
 
+   
 \setlength{\intextsep}{8mm} %This is the space that is inserted to separate (before and after)floats from the surrounding text.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -164,21 +167,21 @@ justification=raggedright}
 {\centering\fontsize{13pt}{15.6pt}\selectfont\bfseries\uppercase}%format
 {\thesection}%label
 {10pt}%sep number text
-{\vspace{5mm}}%before
+{\vspace{0mm}}%before 5mm
 {\vspace{5mm}}%after
 
 \titleformat{\subsection}%command
 {\fontsize{13pt}{15.6pt}\selectfont\bfseries}%format
 {\thesubsection}%label
 {10pt}%sep number text
-{\vspace{5mm}}%before
+{\vspace{0mm}}%before 5mm
 {\vspace{5mm}}%after
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% References
 
-\RequirePackage[style=abnt]{biblatex}
+\RequirePackage[style=abnt,backend=biber]{biblatex}%block=ragged,
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,5 +205,14 @@ justification=raggedright}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Book antiqua en word is Palatino en latex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% avoid line break
+\hyphenpenalty 10000
+\exhyphenpenalty 10000
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \RequirePackage{mathpazo}
